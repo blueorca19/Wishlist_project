@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -22,4 +23,33 @@ function App() {
   );
 }
 
+=======
+import React, { useState } from 'react';
+import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import RegistrationForm from './components/Auth/RegisterForm';
+import RegistrationModal from './components/Auth/RegistrationModal';
+
+const App: React.FC = () => {
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    return (
+        <div>
+            <h1>Welcome to My App</h1>
+            <Button variant="contained" color="primary" onClick={handleOpen}>
+                Open Registration Form
+            </Button>
+            <RegistrationModal open={open} onClose={handleClose} />
+        </div>
+    );
+};
+
+>>>>>>> 0aa4cbc07289948c9d6a03c0fc383fb7cb555780
 export default App;
