@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
+
 const RegisterForm: React.FC = () => {
     const initialValues = {
         username: '',
@@ -20,7 +21,7 @@ const RegisterForm: React.FC = () => {
     });
 
     const onSubmit = (values: any) => {
-        // Обработка отправки формы
+       
         console.log(values);
     };
 

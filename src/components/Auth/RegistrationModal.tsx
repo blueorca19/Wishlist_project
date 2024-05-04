@@ -10,7 +10,11 @@ interface RegistrationModalProps {
 const RegistrationModal: React.FC<RegistrationModalProps> = ({ open, onClose }) => {
     return (
         <Dialog open={open} onClose={onClose}>
-            <DialogTitle>Registration Form</DialogTitle>
+            <h2>
+                <DialogTitle>Hello!</DialogTitle>
+            </h2>
+           
+
             <DialogContent>
                 <RegistrationForm />
             </DialogContent>
