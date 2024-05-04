@@ -1,0 +1,33 @@
+.footer {
+	position:relative; /* Фиксированное положение футера */
+	left: 0; /* Футер будет прижат к левому краю */
+	bottom: 0; /* Футер будет прижат к нижнему краю */
+	width: 100%; /* Ширина футера будет равна ширине экрана */
+	padding: 5px; /* Отступы вокруг содержимого футера */
+	background-color: #ffffff;
+	color: #000000;
+  }
+  
+  .footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+  .github_logo{
+	list-style-type: none;
+	margin-right: 20px;
+  display: flex; /* Добавляем свойство flex */
+  align-items: center; /* Выравниваем элементы по вертикали */
+}
+  
+  
+  .footer__left {
+	list-style-type: none;
+  }
+  
+  .footer__right {
+	list-style-type: none;
+	margin-right: 40px;
+  }
+ 
