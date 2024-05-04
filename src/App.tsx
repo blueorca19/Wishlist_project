@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import RegistrationForm from './components/Auth/RegisterForm';
+import RegistrationModal from './components/Auth/RegistrationModal';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    return (
+        <div>
+            <h1>Welcome to My App</h1>
+            <Button variant="contained" color="primary" onClick={handleOpen}>
+                Open Registration Form
+            </Button>
+            <RegistrationModal open={open} onClose={handleClose} />
+        </div>
+    );
+};
 
 export default App;
