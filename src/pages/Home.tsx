@@ -1,4 +1,4 @@
-import Header from "./../components/header/Header";
+import Header from "../components/header/Header";
 import photo03 from "./../img/Photo03.png";
 import "../App.css"
 
@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main class="section">
-        <div class="container">
+      <main className="section">
+        <div className="container">
         <img
             src={photo03}
             alt=""

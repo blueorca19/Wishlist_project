@@ -1,5 +1,6 @@
 import './Style.css';
 import gitHub from "./../../img/gitHub.svg";
+import { githubLink } from '../../utils/Constants';
 
 const Footer = () => {
   return ( 
@@ -10,7 +11,7 @@ const Footer = () => {
           <li>Cohort-34</li>
         </ul>
         <ul className="github_logo">
-        <li className="social__item"><a href="https://github.com/ania0005" target="_blank"><img src={gitHub} alt="Link"/></a></li>
+        <li className="social__item"><a href={githubLink} target="_blank"><img src={gitHub} alt="Link"/></a></li>
         
         <ul className="footer__right">
           
