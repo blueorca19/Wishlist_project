@@ -15,7 +15,7 @@ const Footer = () => {
         
         <ul className="footer__right">
           
-          <li>Linkstraße 2/8 Etage,<br/>10785 Berlin<br/>AIT-TR</li>
+          <li>Linkstraße 2/8 Etage ,<br/>10785 Berlin<br/>AIT-TR</li>
         </ul> </ul> 
       </div>
     </footer>
