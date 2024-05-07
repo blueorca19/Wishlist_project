@@ -10,25 +10,26 @@ import Login  from './pages/Login';
 import  CreateWishlist from './pages/CreateWishlist';
 import CreateGift from './pages/CreateGift';
 import Account from './pages/Account';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
 
 const App: React.FC = () => {
-    const [open, setOpen] = useState(false);
+    // const [open, setOpen] = useState(false);
 
-    const handleOpen = () => {
-        setOpen(true);
-    };
+    // const handleOpen = () => {
+    //     setOpen(true);
+    // };
 
-    const handleClose = () => {
-        setOpen(false);
-    };
+    // const handleClose = () => {
+    //     setOpen(false);
+    // };
 
     return (
         <div>
             
-            <Button variant="contained" color="primary" onClick={handleOpen}>
+            {/* <Button variant="contained" color="primary" onClick={handleOpen}>
                 Registration
             </Button>
-            <RegistrationModal open={open} onClose={handleClose} />
+            <RegistrationModal open={open} onClose={handleClose} /> */}
             
             <Router>              
                 <ScrollToTop />              
@@ -36,7 +37,8 @@ const App: React.FC = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/login" element={<Login />} />
-                    <Route path="/create" element={<CreateWishlist />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    <Route path="/createWishlist" element={<CreateWishlist />} />
                     <Route path="/createGift" element={<CreateGift />} />
                     <Route path="/account" element={<Account />} />
                 </Routes>

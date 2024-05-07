@@ -12,7 +12,7 @@ const Footer = () => {
         </ul>
         
         <ul className="github_logo">
-        <li className='mr-3'><a href="/privacy-policy">Privacy Policy</a></li>
+        <li className='privacy-policy'><a href="/privacy-policy">Privacy Policy</a></li>
         <li className="social__item"><a href={githubLink} target="_blank"><img src={gitHub} alt="Link"/></a></li>
         
         <ul className="footer__right">

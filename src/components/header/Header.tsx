@@ -2,11 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Style.css";
 
+
 const Header = () => {
   const navigate = useNavigate();
 
   const handleCreateWishlistClick = () => {
-    navigate('/create');
+    navigate('/createWishlist');
   };
 
   return (
@@ -22,7 +23,7 @@ const Header = () => {
           <p>with passion for learning and creating.</p>
         </div>
         <button className="create_list_button" onClick={handleCreateWishlistClick}>
-          Create a new wishlist
+        Create a new wishlist
         </button>
       </div>
     </header>

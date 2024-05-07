@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
 .App {
   text-align: center;
 }
@@ -12,7 +14,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.body{
+  height: 800px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,6 +27,96 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.container{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.privacy-police-text{
+margin-left: 25%;
+margin-right: 25%;
+text-align:justify
+
+}
+/* -------------------------------------- */
+/* Style CreateWishlist */
+
+.wishlist-container {
+  font-family: 'Prata', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ccf3fa;
+}
+
+.wishlist-card {
+  font-family: 'Prata', serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: 'Prata', serif;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.back-arrow {
+  text-decoration: none;
+  display: block;
+  margin-top: 25px; /* Измените это значение, чтобы поднять или опустить стрелочку */
+  border-bottom:none;
+  outline: none;
+}
+
+
+input[type="text"],
+input[type="date"],
+textarea {
+  font-family: 'Prata', serif;
+  width: 94%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.centered-input,
+.centered-textarea {
+  margin: 0 auto; /* Центрируем элементы */
+}
+
+.small-input {
+  width: calc(50% - 5px); /* Ширина поля ввода Event date */
+}
+button {
+  font-family: 'Prata', serif; 
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.rounded-input,
+.rounded-textarea {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* -------------------------------------- */
 
 .App-link {
   color: #61dafb;
