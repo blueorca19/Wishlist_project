@@ -11,7 +11,7 @@ import Account from './pages/Account';
 import NavBar from './components/navbar/NavBar';
 import AboutUs from './pages/AboutUs';
 
-import "./style/main.css"
+import "./App.css"
 import RegisterForm from './components/Auth/RegisterForm';
 
 const App: React.FC = () => {
