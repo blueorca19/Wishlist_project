@@ -1,0 +1,72 @@
+/* Стили для навигационной панели */
+.nav {
+    position: fixed; /* Фиксируем панель навигации */
+    top: 0; /* Располагаем сверху страницы */
+    left: 0; /* Выравниваем по левому краю */
+    width: 100%; /* Занимает всю ширину экрана */
+    height: 60px; /* Устанавливаем фиксированную высоту панели */
+    padding: 10px 0; /* Отступы сверху и снизу в 20px, отступы слева и справа 0 */
+    background-color: var(--nav-bg); /* Цвет фона навигации */
+    border-bottom: 1px solid var(--nav-border); /* Горизонтальная граница снизу */
+    color: var(--nav-text); /* Цвет текста */
+    letter-spacing: normal; /* Межбуквенное расстояние */
+}
+
+/* Стили для строки навигации */
+.nav-row {
+    display: flex; /* Отображение в виде флекс-контейнера */
+    justify-content: flex-end; /* Расположение элементов в строке по правому краю */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    column-gap: 30px; /* Горизонтальный отступ между элементами 30px */
+    row-gap: 20px; /* Вертикальный отступ между элементами 20px */
+    flex-wrap: wrap; /* Перенос элементов на новую строку при нехватке места */
+}
+
+.logo {
+	margin-right: auto;
+	color: var(--nav-text);
+	font-size: 24px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo strong {
+	font-weight: 700;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	align-items: center;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav-list__link {
+	color: var(--nav-text);
+	transition: opacity 0.2s ease-in;
+    line-height: 24px; /* Центрируем текст по вертикали */
+}
+
+.nav-list__link:hover {
+	opacity: 0.8;
+}
+
+.nav-list__link--active {
+	position: relative;
+}
+
+.nav-list__link--active::before {
+	content: '';
+
+	position: absolute;
+	left: 0;
+	top: 100%;
+
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: var(--accent);
+}
