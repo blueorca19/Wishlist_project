@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-export const AboutUs = () => {
+const AboutUs: React.FC = () => {
   return (
+
     <div className='body'>
-        <p>AboutUs</p>
-    </div>
-  )
-}
+    <p>About us</p>
+    
+</div>
+  );
+};
+
+export default AboutUs;

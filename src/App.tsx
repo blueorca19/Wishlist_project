@@ -5,11 +5,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./utils/ScrollToTop";
 import Home from "./pages/Home";
-import { AboutUs } from './pages/AboutUs';
-import Login  from './pages/Login';
-import  CreateWishlist from './pages/CreateWishlist';
+import CreateWishlist from './pages/CreateWishlist';
 import CreateGift from './pages/CreateGift';
 import Account from './pages/Account';
+import NavBar from './components/navbar/NavBar';
+import AboutUs from './pages/AboutUs';
+
+import "./style/main.css"
+import RegisterForm from './components/Auth/RegisterForm';
 
 const App: React.FC = () => {
     const [open, setOpen] = useState(false);
@@ -25,18 +28,19 @@ const App: React.FC = () => {
     return (
         <div>
             
-            <Button variant="contained" color="primary" onClick={handleOpen}>
+            {/* {<Button variant="contained" color="primary" onClick={handleOpen}>
                 Registration
             </Button>
-            <RegistrationModal open={open} onClose={handleClose} />
+            <RegistrationModal open={open} onClose={handleClose} /> } */}
             
             <Router>              
-                <ScrollToTop />              
+                <ScrollToTop />
+                <NavBar />            
                 <Routes>                 
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<AboutUs />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/create" element={<CreateWishlist />} />
+                    <Route path="/signup" element={<RegisterForm />} />
+                    <Route path="/createWishList" element={<CreateWishlist />} />
                     <Route path="/createGift" element={<CreateGift />} />
                     <Route path="/account" element={<Account />} />
                 </Routes>
