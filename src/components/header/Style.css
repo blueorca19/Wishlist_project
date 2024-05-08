@@ -5,7 +5,7 @@
 	align-items: center;
 	height: 1000px;
 	background-color: white;
-	background-image: url('./../../img/Photo01.jpg');
+	background-image: url('./../../img/Photo009.jpg');
 	background-repeat: no-repeat; /* Отключаем повторение текстуры */
     background-size: cover; /* Масштабируем изображение так, чтобы оно полностью покрыло фон */
     background-position: center; /* Центрируем изображение */
