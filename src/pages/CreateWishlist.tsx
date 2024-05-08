@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 
 const CreateWishlist: React.FC = () => {
@@ -7,10 +9,10 @@ const CreateWishlist: React.FC = () => {
     <div className="wishlist-container">
       <div className="wishlist-card">
       <span className="back-arrow"><a href="/">&#8592; Back</a></span>
-        <h2 style={{ fontSize: "24px", fontWeight: "bold" }}> Create a wishlist</h2> {/* Изменение размера и жирности текста */}
+        <h2 className="title"> Create a wishlist</h2>
         
         <div className="input-group">
-          <label htmlFor="wishlist-name">Wish list name</label>
+          <label className="title-1" htmlFor="wishlist-name">Wish list name</label>
           <input
             type="text"
             id="wishlist-name"
@@ -28,9 +30,11 @@ const CreateWishlist: React.FC = () => {
         </div>
         <div className="input-group">
           <label htmlFor="event-date">Event date</label>
-          <input type="date" id="event-date" className="rounded-input small-input" lang="en"/> {/* Используем класс small-input */}
+          <input type="date" id="event-date" className="rounded-input" lang="en"/>
         </div>
+        <div className="input-group">
         <button className="save-button">Save</button>
+        </div>
       </div>
     </div>
    

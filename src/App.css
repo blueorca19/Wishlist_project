@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-@import "./reset.css"; /* Импорт файлов сброса стилей */
+/* @import "./reset.css"; Импорт файлов сброса стилей */
 
 .App {
   text-align: center;
@@ -20,7 +20,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.body{
+.body {
   height: 900px;
 }
 .privacy-police-text {
@@ -29,93 +29,91 @@
   margin-right: 25%;
   text-align: justify;
 }
+
+/* --------------------------------------- */
+/*------------------createWishlist---------- */
 .wishlist-container {
-  font-family: "Prata", serif;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color:white;
+}
+.title {
+  font-size: 24px;
+  margin-top: 8px;
 }
 
+.title-1 {
+  font-size: 15px;
+  margin-top: 30px;
+}
 .wishlist-card {
-  font-family: "Prata", serif;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 4px 4px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #d1edf8;
+  box-shadow: 0px 2px 4px rgba(53, 22, 22, 0.4);
   padding: 20px;
+  border-radius: 15px;
   width: 600px;
 }
 
-.input-group {
-  margin-bottom: 20px;
+.back-arrow a {
+  text-decoration: none;
+  color: #b1abab;
 }
 
+.back-arrow a:hover {
+  text-decoration: underline;
+}
+
+.input-group {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
 label {
-  font-family: "Prata", serif;
   display: block;
   margin-bottom: 5px;
 }
 
-.back-arrow {
-  text-decoration: none;
-  display: block;
-  margin-top: 25px; /* Измените это значение, чтобы поднять или опустить стрелочку */
-  border-bottom: none;
-  outline: none;
+.rounded-input {
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  font-family: "Prata", sans-serif;
 }
 
-input[type="text"],
-textarea {
-  font-family: "Prata", serif;
-  width: 100%;
-  padding: 10px;
+.rounded-textarea {
+  background-color: white;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-top: 5px;
-  font-size: 14px; /* Уменьшаем размер шрифта внутри полей ввода */
-}
-
-input[type="date"] {
-  font-family: "Prata", serif;
-  width: 50%;
+  width: 94%;
+  height: 150px;
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-top: 5px;
-  font-size: 14px; /* Уменьшаем размер шрифта внутри полей ввода */
+  margin-bottom: 10px;
+  border-color: #dad7d7;
+  font-family: "Prata", sans-serif;
 }
 
-.centered-input,
-.centered-textarea {
-  margin: 0 auto; /* Центрируем элементы */
-}
-
-.small-input {
-  width: calc(50% - 5px); /* Ширина поля ввода Event date */
-}
-
-button {
-  font-family: "Prata", serif;
+.save-button {
+  margin-top: 10px;
   background-color: #007bff;
   color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
+  width: 97%;
+  height: 50px;
 }
 
-button:hover {
-  background-color: #0056b3;
+.save-button:hover {
+  background-color: #4294ec;
 }
 
-.rounded-input,
-.rounded-textarea {
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* -------------------------------------- */   
+/* -------------------------------------- */
 
 .App-link {
   color: #61dafb;
@@ -131,16 +129,11 @@ button:hover {
 
   /* Nav */
 
-  --nav-bg: rgba(
-    23,
-    23,
-    24,
-    0.5
-  ); 
-  
+  --nav-bg: rgba(23, 23, 24, 0.5);
+
   /* Прозрачный черный фон навигации с 80% непрозрачности */
 
-  --nav-border: var(--black-border); /* Граница навигации */
+  /* --nav-border: var(--black-border); Граница навигации */
   --nav-text: var(--white); /* Текст навигации */
 
   /* Header */

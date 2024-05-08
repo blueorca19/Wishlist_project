@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 /* Стили для навигационной панели */
 .nav {
+	
     position: fixed; /* Фиксируем панель навигации */
     top: 0; /* Располагаем сверху страницы */
     left: 0; /* Выравниваем по левому краю */
@@ -23,10 +25,11 @@
 }
 
 .logo {
+	text-decoration: none;
 	margin-right: auto;
 	color: var(--nav-text);
 	font-size: 24px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Prata', sans-serif;
 }
 
 .logo strong {
@@ -34,6 +37,7 @@
 }
 
 .nav-list {
+	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 	row-gap: 10px;
@@ -41,10 +45,11 @@
 	column-gap: 40px;
 	font-size: 16px;
 	font-weight: 500;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Prata", serif;
 }
 
 .nav-list__link {
+	text-decoration: none;
 	color: var(--nav-text);
 	transition: opacity 0.2s ease-in;
     line-height: 24px; /* Центрируем текст по вертикали */
