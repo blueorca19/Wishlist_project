@@ -1,12 +1,11 @@
 .footer {
-	 /* Фиксированное положение футера */
-	height: 70px; /* Высота footer */
-	position:absolute;
-    
-	width: 100%; /* Ширина футера будет равна ширине экрана */
-	padding: 8px; /* Отступы вокруг содержимого футера */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	background-color: #f3f1f1;
 	color: #000000;
+	padding: 8px;
   }
   
   .footer__wrapper {
