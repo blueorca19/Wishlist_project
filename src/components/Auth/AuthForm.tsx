@@ -48,7 +48,7 @@ const AuthForm: React.FC = () => {
   
   return (
     <div className="auth-container">
-     
+    <h2>Log In</h2> 
       {error && <p className="error-message">{error}</p>}
       <form onSubmit={handleSubmit}>
         <div className="input-group">
@@ -71,9 +71,13 @@ const AuthForm: React.FC = () => {
             required
           />
         </div>
+        
+        <p className="consent-text">
+          By entering the resource, you automatically consent to the processing of personal data. 
+          <a href="/privacy-policy"> Personal Policy</a>
+        </p>
         <button type="submit">Log In</button>
       </form>
-     
       <p>
         Don't have an account? <a href="/signup">Sign Up</a>
       </p>

@@ -1,41 +1,35 @@
 .footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #f3f1f1;
-	color: #000000;
-	padding: 7px;
-  }
-  
-  .footer__wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f3f1f1;
+  color: #000000;
+  padding: 7px;
+}
 
-  .github_logo{
-	list-style-type: none;
-	margin-right: 20px;
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.github_logo {
+  list-style-type: none;
+  margin-right: 20px;
   display: flex; /* Добавляем свойство flex */
   align-items: center; /* Выравниваем элементы по вертикали */
 }
-  
-  
-  .footer__left {
-	list-style-type: none;
 
-  }
-  
-  .footer__right {
-	list-style-type: none;
-	display: flex; /* Добавляем свойство flex для управления распределением элементов */
-  }
-  
-  .footer__right > li:not(:last-child) {
-	margin-right: 40px; /* Добавляем маржу между элементами, кроме последнего */
-  }
-  .privacy-policy{
-	margin-right: 40px;
-  }
- 
+.footer__left {
+  list-style-type: none;
+}
+
+.footer__right {
+  list-style-type: none;
+  display: flex; /* Добавляем свойство flex для управления распределением элементов */
+}
+
+.privacy-policy {
+  margin-right: 40px;
+}

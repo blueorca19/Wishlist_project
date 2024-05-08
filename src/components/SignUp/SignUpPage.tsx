@@ -43,6 +43,7 @@ const SignUpPage: React.FC = () => {
 
   return (
     <div className="auth-container">
+      <h2>Sign Up</h2> 
      
       {error && <p className="error-message">{error}</p>}
 
@@ -86,7 +87,24 @@ const SignUpPage: React.FC = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+          <div className="input-group">
+            <label htmlFor="confirm-password">Confirm Password</label>
+            <input
+            type="password"
+            id="confirm-password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+          </div>
+
         </div>
+
+        
+        <p className="consent-text">
+          By entering the resource, you automatically consent to the processing of personal data. 
+          <a href="/privacy-policy"> Personal Policy</a>
+        </p>
         <button type="submit">Sign Up</button>
       </form>
      
