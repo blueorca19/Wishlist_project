@@ -1,10 +1,15 @@
 
-
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const CreateWishlist: React.FC = () => {
 
-  return (
+const navigate = useNavigate();
+
+const handleSaveClick = () => {
+  navigate("/dashboard");
+};
+return (
     
     <div className="wishlist-container">
       <div className="wishlist-card">
@@ -21,7 +26,7 @@ const CreateWishlist: React.FC = () => {
           />
         </div>
         <div className="input-group">
-          <label htmlFor="comment">Comment</label>
+          <label htmlFor="comment" className="title-1">Comment</label>
           <textarea
             id="comment"
             placeholder="Write something to your friends. This could be a greeting, wishes for gifts or an invitation."
@@ -29,11 +34,11 @@ const CreateWishlist: React.FC = () => {
           ></textarea>
         </div>
         <div className="input-group">
-          <label htmlFor="event-date">Event date</label>
+          <label htmlFor="event-date" className="title-1">Event date</label>
           <input type="date" id="event-date" className="rounded-input" lang="en"/>
         </div>
         <div className="input-group">
-        <button className="save-button">Save</button>
+        <button className="save-button" onClick={handleSaveClick}>Save</button>
         </div>
       </div>
     </div>

@@ -28,6 +28,7 @@
   }
   
   .footer__right {
+	margin-left: 30px;
 	list-style-type: none;
 	display: flex; /* Добавляем свойство flex для управления распределением элементов */
   }

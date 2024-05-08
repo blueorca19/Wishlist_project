@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=DM+Serif+Display:ital@0;1&family=Lemon&family=Modak&family=Poller+One&family=Prata&display=swap');
+
+
 .nav {
     position: fixed;
     top: 0;
@@ -7,7 +10,7 @@
     height: 60px;
     padding: 10px 0;
     background-color: rgba(23, 23, 24, 0.5);
-    border-bottom: 1px solid #26292d;
+    /* border-bottom: 1px solid #26292d; */
     color: #fff;
     letter-spacing: normal;
 }
@@ -26,7 +29,8 @@ text-decoration: none;
   margin-right: auto;
   color: var(--nav-text);
   font-size: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 2px;
 }
 
 .logo strong {
@@ -35,7 +39,7 @@ text-decoration: none;
 
 
 .nav-list {
-
+	letter-spacing: 1px;
 	list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +48,7 @@ text-decoration: none;
     column-gap: 40px;
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
+    font-family: "DM Serif Display", serif;
 }
 
 .nav-list__link {
@@ -73,8 +77,3 @@ text-decoration: none;
     background-color: #5c62ec;
 }
 
-.container {
-  margin: 0 auto; /* Размещение по центру */
-  padding: 0 15px; /* Отступы */
-  max-width: 1200px; /* Максимальная ширина */
-  }

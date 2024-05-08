@@ -1,28 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-/* @import "./reset.css"; Импорт файлов сброса стилей */
+@import "./reset.css";   /*Импорт файлов сброса стилей */
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: -0.5px;
+
+  /* Light mode */
+  background-color: var(--page-bg);
+  color: var(--text-color);
 }
-.body {
-  height: 900px;
-}
+/* -------------privacy-police------------ */
+
 .privacy-police-text {
   margin-top: 100px;
   margin-left: 25%;
@@ -30,7 +22,6 @@
   text-align: justify;
 }
 
-/* --------------------------------------- */
 /*------------------createWishlist---------- */
 .wishlist-container {
   background-color: #ffffff;
@@ -38,15 +29,19 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-size: 14px;
+  font-family: "DM Serif Display", serif;
 }
 .title {
-  font-size: 24px;
+  font-size: 30px;
   margin-top: 8px;
+  margin-left: 15px;
 }
 
 .title-1 {
-  font-size: 15px;
+  font-size: 18px;
   margin-top: 30px;
+  font-family: "DM Serif Display", serif;
 }
 .wishlist-card {
   background-color: #d1edf8;
@@ -69,6 +64,7 @@
   width: 100%;
   margin: 0 auto;
   border-radius: 20px;
+  margin-left: 15px;
 }
 input:focus,
 textarea:focus {
@@ -83,7 +79,7 @@ label {
   background-color: white;
   border: none;
   border-radius: 15px;
-  font-family: "Prata", sans-serif;
+  font-family: "DM Serif Display", serif;
 }
 
 .rounded-textarea {
@@ -92,9 +88,8 @@ label {
   width: 94%;
   height: 150px;
   padding: 10px;
-  margin-bottom: 10px;
   border-color: #dad7d7;
-  font-family: "Prata", sans-serif;
+  font-family: "DM Serif Display", serif;
 }
 
 .save-button {
@@ -106,7 +101,7 @@ label {
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
-  width: 97%;
+  width: 94%;
   height: 50px;
 }
 
@@ -115,57 +110,21 @@ label {
 }
 
 /* -------------------------------------- */
+.project-instruction{
+margin-top: 50px;
 
-.App-link {
-  color: #61dafb;
 }
-
-:root {
-  /* Colors */
-  --blackpure: #000; /* Чистый черный *
-  --black: #171718; /* Черный */
-  --black-border: #26292d; /* Черная граница */
-  --white: #fff; /* Белый */
-  --purple: #5c62ec; /* Фиолетовый */
-
-  /* Nav */
-
-  --nav-bg: rgba(23, 23, 24, 0.5);
-
-  /* Прозрачный черный фон навигации с 80% непрозрачности */
-
-  /* --nav-border: var(--black-border); Граница навигации */
-  --nav-text: var(--white); /* Текст навигации */
-
-  /* Header */
-  --header-text: var(--white); /* Текст шапки */
-  --page-bg: var(--white); /* Фон страницы */
-  --text-color: var(--black); /* Цвет текста */
-  --accent: var(--purple); /* Акцентный цвет */
-  --title-1: var(--accent); /* Заголовок 1 */
-  --project-card-bg: var(--white); /* Фон карточки проекта */
-  --project-card-text: var(--black); /* Текст карточки проекта */
-  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25); /* Тень */
-}
-
-/* Контейнер */
 .container {
   margin: 0 auto; /* Размещение по центру */
   padding: 0 15px; /* Отступы */
   max-width: 1200px; /* Максимальная ширина */
-}
+  }
+ 
 
-/* Скрытие элементов */
-.none {
-  display: none !important;
-}
+ 
 
-/* Секция */
-.section {
-  padding: 70px 0; /* Отступы */
-}
 
-.main-content {
-  min-height: calc(100vh - 40px); /* Высота окна за вычетом высоты footer */
-  /* Остальные стили для основного контента */
-}
+
+ 
+
+ 

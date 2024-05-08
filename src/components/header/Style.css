@@ -1,18 +1,15 @@
 .header {
-	padding: 4cm 0;
+
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	height: 1000px;
 	background-color: white;
 	background-image: url('./../../img/Photo01.jpg');
 	background-repeat: no-repeat; /* Отключаем повторение текстуры */
     background-size: cover; /* Масштабируем изображение так, чтобы оно полностью покрыло фон */
     background-position: center; /* Центрируем изображение */
-	color: white;
-	text-align: left;
-	height: 900px;
-	
+	color: white;	
+	height: 1400px;
 }
 
 .header__wrapper {
@@ -31,6 +28,7 @@
 	font-weight: 700;
 	line-height: 1.4;
 	color: white;
+	font-family: "DM Serif Display", serif;
 }
 
 .header__title strong {
@@ -41,6 +39,7 @@
 .header__title em {
 	font-style: normal;
 	color: white;
+	
 }
 
 .header__text {
@@ -48,6 +47,7 @@
 	font-size: 18px;
 	line-height: 1.333;
 	color: white;
+	font-family: "DM Serif Display", serif;
 }
 
 .header__text p + p {
@@ -64,4 +64,5 @@
 	cursor: pointer; /* Курсор при наведении */
 	transition: box-shadow 0.3s ease; /* Плавное изменение тени */
 	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3); /* Увеличиваем тень при наведении */
+	font-family: "DM Serif Display", serif;
 }

@@ -19,7 +19,7 @@ const App: React.FC = () => {
    
 
     return (
-        <div>
+        <div className='App'>
            <Router>              
                 <ScrollToTop />
                 <NavBar />            
@@ -28,13 +28,10 @@ const App: React.FC = () => {
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/login" element={<AuthForm />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                    <Route path="/createWishlist" element={<CreateWishlist />} />
-                    <Route path="/createWishList" element={<CreateWishlist />} />
+                    <Route path="/createWishlist" element={<CreateWishlist />} />                 
                     <Route path="/createGift" element={<CreateGift />} />
                     <Route path="/dashboard" element={<Account />} />
                     <Route path="/signup" element={<SignUpPage />} />
-
-
                 </Routes>
                 <Footer />
             </Router>
