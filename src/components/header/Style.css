@@ -1,9 +1,9 @@
 .header {
 	padding: 4cm 0;
-	min-height: 695px;
 	display: flex;
 	justify-content: left;
 	align-items: center;
+	height: 1000px;
 	background-color: white;
 	background-image: url('./../../img/Photo01.jpg');
 	background-repeat: no-repeat; /* Отключаем повторение текстуры */
@@ -11,6 +11,8 @@
     background-position: center; /* Центрируем изображение */
 	color: white;
 	text-align: left;
+	height: 900px;
+	
 }
 
 .header__wrapper {

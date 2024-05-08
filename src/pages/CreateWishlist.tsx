@@ -1,5 +1,3 @@
-import "../App.css";
-
 import React from 'react';
 
 const CreateWishlist: React.FC = () => {
@@ -9,7 +7,7 @@ const CreateWishlist: React.FC = () => {
     <div className="wishlist-container">
       <div className="wishlist-card">
       <span className="back-arrow"><a href="/">&#8592; Back</a></span>
-        <h2> Create a wishlist</h2>
+        <h2 style={{ fontSize: "24px", fontWeight: "bold" }}> Create a wishlist</h2> {/* Изменение размера и жирности текста */}
         
         <div className="input-group">
           <label htmlFor="wishlist-name">Wish list name</label>
@@ -30,7 +28,7 @@ const CreateWishlist: React.FC = () => {
         </div>
         <div className="input-group">
           <label htmlFor="event-date">Event date</label>
-          <input type="date" id="event-date" className="rounded-input" lang="en"/>
+          <input type="date" id="event-date" className="rounded-input small-input" lang="en"/> {/* Используем класс small-input */}
         </div>
         <button className="save-button">Save</button>
       </div>

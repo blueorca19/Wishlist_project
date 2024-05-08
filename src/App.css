@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import "./reset.css"; /* Импорт файлов сброса стилей */
+
 .App {
   text-align: center;
 }
@@ -8,14 +10,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-.body{
-  height: 800px;
-}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,36 +20,31 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.container{
-  text-align: center;
-  margin-top: 40px;
+.body{
+  height: 900px;
 }
-
-.privacy-police-text{
-margin-left: 25%;
-margin-right: 25%;
-text-align:justify
-
+.privacy-police-text {
+  margin-top: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: justify;
 }
-/* -------------------------------------- */
-/* Style CreateWishlist */
-
 .wishlist-container {
-  font-family: 'Prata', serif;
+  font-family: "Prata", serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #ccf3fa;
+  background-color:white;
 }
 
 .wishlist-card {
-  font-family: 'Prata', serif;
+  font-family: "Prata", serif;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 400px;
+  width: 600px;
 }
 
 .input-group {
@@ -63,7 +52,7 @@ text-align:justify
 }
 
 label {
-  font-family: 'Prata', serif;
+  font-family: "Prata", serif;
   display: block;
   margin-bottom: 5px;
 }
@@ -72,20 +61,29 @@ label {
   text-decoration: none;
   display: block;
   margin-top: 25px; /* Измените это значение, чтобы поднять или опустить стрелочку */
-  border-bottom:none;
+  border-bottom: none;
   outline: none;
 }
 
-
 input[type="text"],
-input[type="date"],
 textarea {
-  font-family: 'Prata', serif;
-  width: 94%;
+  font-family: "Prata", serif;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-top: 5px;
+  font-size: 14px; /* Уменьшаем размер шрифта внутри полей ввода */
+}
+
+input[type="date"] {
+  font-family: "Prata", serif;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 14px; /* Уменьшаем размер шрифта внутри полей ввода */
 }
 
 .centered-input,
@@ -96,8 +94,9 @@ textarea {
 .small-input {
   width: calc(50% - 5px); /* Ширина поля ввода Event date */
 }
+
 button {
-  font-family: 'Prata', serif; 
+  font-family: "Prata", serif;
   background-color: #007bff;
   color: #ffffff;
   border: none;
@@ -115,119 +114,64 @@ button:hover {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-/* -------------------------------------- */
+
+/* -------------------------------------- */   
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 :root {
-	/* Colors */
-	--blackpure: #000; /* Чистый черный */
-	--black: #171718; /* Черный */
-	--black-border: #26292d; /* Черная граница */
-	--white: #fff; /* Белый */
-	--purple: #5c62ec; /* Фиолетовый */
+  /* Colors */
+  --blackpure: #000; /* Чистый черный *
+  --black: #171718; /* Черный */
+  --black-border: #26292d; /* Черная граница */
+  --white: #fff; /* Белый */
+  --purple: #5c62ec; /* Фиолетовый */
 
-	/* Nav */
-	--nav-bg: rgba(23, 23, 24, 0.5); /* Прозрачный черный фон навигации с 80% непрозрачности */
-	--nav-border: var(--black-border); /* Граница навигации */
-	--nav-text: var(--white); /* Текст навигации */
+  /* Nav */
 
-	/* Header */
-	--header-text: var(--white); /* Текст шапки */
+  --nav-bg: rgba(
+    23,
+    23,
+    24,
+    0.5
+  ); 
+  
+  /* Прозрачный черный фон навигации с 80% непрозрачности */
+
+  --nav-border: var(--black-border); /* Граница навигации */
+  --nav-text: var(--white); /* Текст навигации */
+
+  /* Header */
+  --header-text: var(--white); /* Текст шапки */
+  --page-bg: var(--white); /* Фон страницы */
+  --text-color: var(--black); /* Цвет текста */
+  --accent: var(--purple); /* Акцентный цвет */
+  --title-1: var(--accent); /* Заголовок 1 */
+  --project-card-bg: var(--white); /* Фон карточки проекта */
+  --project-card-text: var(--black); /* Текст карточки проекта */
+  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25); /* Тень */
 }
 
-	
-	
-
-
-/* Общие стили */
 /* Контейнер */
 .container {
-	margin: 0 auto; /* Размещение по центру */
-	padding: 0 15px; /* Отступы */
-	max-width: 1200px; /* Максимальная ширина */
+  margin: 0 auto; /* Размещение по центру */
+  padding: 0 15px; /* Отступы */
+  max-width: 1200px; /* Максимальная ширина */
 }
 
 /* Скрытие элементов */
 .none {
-	display: none !important;
+  display: none !important;
 }
 
 /* Секция */
 .section {
-	padding: 70px 0; /* Отступы */
+  padding: 70px 0; /* Отступы */
 }
 
-/* Заголовок 1 */
-.title-1 {
-	margin-bottom: 60px; /* Нижний отступ */
-	font-size: 60px; /* Размер шрифта */
-	font-weight: 700; /* Насыщенность шрифта */
-	line-height: 1.3; /* Межстрочный интервал */
-	color: var(--title-1); /* Цвет текста */
-	text-align: center; /* Выравнивание по центру */
+.main-content {
+  min-height: calc(100vh - 40px); /* Высота окна за вычетом высоты footer */
+  /* Остальные стили для основного контента */
 }
-
-/* Заголовок 2 */
-.title-2 {
-	margin-bottom: 20px; /* Нижний отступ */
-	font-size: 40px; /* Размер шрифта */
-	font-weight: 700; /* Насыщенность шрифта */
-	line-height: 1.3; /* Межстрочный интервал */
-}
-
-/* Кнопка */
-.btn {
-	display: inline-block; /* Блочный элемент */
-	height: 48px; /* Высота */
-	padding: 12px 28px; /* Отступы внутри кнопки */
-
-	border-radius: 5px; /* Радиус скругления */
-	background-color: var(--accent); /* Цвет фона */
-	color: var(--white); /* Цвет текста */
-	letter-spacing: 0.15px; /* Межбуквенное расстояние */
-	font-size: 16px; /* Размер шрифта */
-	font-weight: 500; /* Насыщенность шрифта */
-
-	transition: opacity 0.2s ease-in; /* Плавное изменение прозрачности */
-}
-
-/* При наведении на кнопку */
-.btn:hover {
-	opacity: 0.5; /* Уменьшение прозрачности */
-}
-
-/* При нажатии на кнопку */
-.btn:active {
-	position: relative; /* Относительное позиционирование */
-	top: 1px; /* Смещение вниз */
-}
-
-/* Обводка кнопки */
-.btn-outline {
-	display: flex; /* Флекс-элемент */
-	column-gap: 10px; /* Горизонтальный отступ между элементами */
-	align-items: center; /* Выравнивание по центру */
-
-	height: 48px; /* Высота */
-	padding: 12px 20px; /* Отступы внутри кнопки */
-
-	border-radius: 5px; /* Радиус скругления */
-	border: 1px solid #000; /* Обводка */
-}
-
-
-
-
-

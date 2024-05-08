@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./style.css";
 
+
 const NavBar = () => {
   const activeLink = "nav-list__link nav-list__link--active";
   const normalLink = "nav-list__link";
